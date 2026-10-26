@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joko & Putri — Undangan Pernikahan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="undangan_pernikahan.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#nav">
+
+  <div id="cover">
+    <div class="cover-box">
+      <p class="small-caps">The Wedding of</p>
+      <h1 class="script">Joko &amp; Putri</h1>
+      <p class="mb-4">Rabu, 11 September 2035</p>
+      <p class="mb-1 small">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+      <p class="fw-medium mb-4">Tamu Undangan</p>
+      <button id="btnBuka" class="btn btn-gold px-5">Buka Undangan</button>
+    </div>
+  </div>
+
+  <audio id="musik" loop preload="auto">
+    <source src="Janji Suci - Yovie & Nuno Live Cover _ Good People Music.mp3" type="audio/mpeg">
+  </audio>
+  <button id="btnMusik" class="btn-musik" title="Putar / Jeda musik" aria-label="Putar atau jeda musik">♫</button>
+
+  <nav id="nav" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand script" href="#home">J &amp; P</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mempelai">Mempelai</a></li>
+          <li class="nav-item"><a class="nav-link" href="#acara">Acara</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cerita">Cerita</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="#rsvp">RSVP</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero d-flex align-items-center justify-content-center text-center">
+    <div class="container reveal">
+      <p class="small-caps">Undangan Pernikahan</p>
+      <div class="monogram">J<span>&amp;</span>P</div>
+      <h1 class="script display-2">Joko &amp; Putri</h1>
+      <p class="lead">Rabu, 11 September 2035</p>
+      <div class="divider"><span>❦</span></div>
+      <p class="fst-italic mx-auto" style="max-width:520px">Assalamu'alaikum Wr. Wb.<br>Dengan memohon rahmat dan ridha
+        Allah SWT, kami bermaksud menyempurnakan separuh agama kami.</p>
+      <a href="#mempelai" class="btn btn-outline-gold mt-3">Lihat Selengkapnya</a>
+    </div>
+  </header>
+
+  <section class="bg-gold-soft py-5 text-center">
+    <div class="container reveal">
+      <p class="small-caps">Menghitung Hari Bahagia</p>
+      <div class="row justify-content-center g-3 my-3">
+        <div class="col-3 col-md-2">
+          <div class="cd-box"><b id="d">00</b><small>Hari</small></div>
+        </div>
+        <div class="col-3 col-md-2">
+          <div class="cd-box"><b id="h">00</b><small>Jam</small></div>
+        </div>
+        <div class="col-3 col-md-2">
+          <div class="cd-box"><b id="m">00</b><small>Menit</small></div>
+        </div>
+        <div class="col-3 col-md-2">
+          <div class="cd-box"><b id="s">00</b><small>Detik</small></div>
+        </div>
+      </div>
+      <a class="btn btn-gold" target="_blank"
+        href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Pernikahan+Joko+%26+Putri&dates=20350911T010000Z/20350911T070000Z">Simpan
+        Tanggal</a>
+    </div>
+  </section>
+
+  <section id="mempelai" class="py-6 text-center">
+    <div class="container">
+      <p class="small-caps reveal">Mempelai</p>
+      <h2 class="script reveal">Dua Hati Satu Tujuan</h2>
+      <div class="row g-4 mt-3 justify-content-center align-items-center">
+        <div class="col-md-5 reveal">
+          <div class="couple-card">
+            <div class="avatar">J</div>
+            <h3>M. joko</h3>
+            <p class="text-muted mb-0">Putra dari Bapak ………<br>&amp; Ibu ………</p>
+          </div>
+        </div>
+        <div class="col-md-1 script display-4 text-gold reveal">&amp;</div>
+        <div class="col-md-5 reveal">
+          <div class="couple-card">
+            <div class="avatar">P</div>
+            <h3>Putri Lestari</h3>
+            <p class="text-muted mb-0">Putri dari Bapak ………<br>&amp; Ibu ………</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="acara" class="py-6 bg-gold-soft text-center">
+    <div class="container">
+      <p class="small-caps reveal">Waktu &amp; Tempat</p>
+      <h2 class="script reveal">Rangkaian Acara</h2>
+      <div class="row g-4 mt-3 justify-content-center">
+        <div class="col-md-5 reveal">
+          <div class="event-card h-100">
+            <h3>Akad Nikah</h3>
+            <div class="divider"><span>❦</span></div>
+            <p>Rabu, 11 September 2035</p>
+            <p>Pukul 08.00 WIB — selesai</p>
+            <p class="mb-0">Gedung Serbaguna Graha Cinta<br>Jl. Mawar No. 88, Surabaya</p>
+          </div>
+        </div>
+        <div class="col-md-5 reveal">
+          <div class="event-card h-100">
+            <h3>Resepsi</h3>
+            <div class="divider"><span>❦</span></div>
+            <p>Rabu, 11 September 2035</p>
+            <p>Pukul 11.00 — 14.00 WIB</p>
+            <p class="mb-0">Gedung Serbaguna Graha Cinta<br>Jl. Mawar No. 88, Surabaya</p>
+          </div>
+        </div>
+      </div>
+      <a class="btn btn-gold mt-4" target="_blank" href="https://maps.google.com/?q=Surabaya">Lihat Lokasi</a>
+    </div>
+  </section>
+
+  <section id="cerita" class="py-6">
+    <div class="container text-center">
+      <p class="small-caps reveal">Perjalanan Cinta</p>
+      <h2 class="script reveal mb-5">Kisah Kami</h2>
+      <div class="timeline">
+        <div class="t-item reveal"><span class="t-year">2024</span>
+          <h4>Pertemuan Pertama</h4>
+          <p>Dua orang asing dipertemukan oleh takdir yang indah.</p>
+        </div>
+        <div class="t-item reveal"><span class="t-year">2026</span>
+          <h4>Menjalin Kasih</h4>
+          <p>Rasa itu tumbuh, dan kami memutuskan melangkah lebih jauh.</p>
+        </div>
+        <div class="t-item reveal"><span class="t-year">2029</span>
+          <h4>Lamaran</h4>
+          <p>Dengan restu keluarga, sebuah cincin menjadi saksi keseriusan kami.</p>
+        </div>
+        <div class="t-item reveal"><span class="t-year">2035</span>
+          <h4>Menuju Halal</h4>
+          <p>Dengan penuh syukur, kami siap mengikat janji suci.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeri" class="py-6 bg-gold-soft text-center">
+    <div class="container">
+      <p class="small-caps reveal">Galeri Momen</p>
+      <h2 class="script reveal mb-4">Kenangan Kami</h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 reveal">
+          <div class="gal-item tall" data-foto="Foto 1">Foto 1</div>
+        </div>
+        <div class="col-6 col-md-4 reveal">
+          <div class="gal-item" data-foto="Foto 2">Foto 2</div>
+        </div>
+        <div class="col-6 col-md-4 reveal">
+          <div class="gal-item tall" data-foto="Foto 3">Foto 3</div>
+        </div>
+        <div class="col-6 col-md-4 reveal">
+          <div class="gal-item" data-foto="Foto 4">Foto 4</div>
+        </div>
+        <div class="col-6 col-md-4 reveal">
+          <div class="gal-item tall" data-foto="Foto 5">Foto 5</div>
+        </div>
+        <div class="col-6 col-md-4 reveal">
+          <div class="gal-item" data-foto="Foto 6">Foto 6</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="rsvp" class="py-6 text-center">
+    <div class="container" style="max-width:640px">
+      <p class="small-caps reveal">Konfirmasi &amp; Ucapan</p>
+      <h2 class="script reveal mb-4">Kirim Doa Restu</h2>
+      <form id="formRsvp" class="text-start reveal needs-validation" novalidate>
+        <div class="mb-3">
+          <label class="form-label">Nama</label>
+          <input id="nama" class="form-control" required>
+          <div class="invalid-feedback">Nama wajib diisi.</div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 mb-3">
+            <label class="form-label">Konfirmasi Kehadiran</label>
+            <select id="hadir" class="form-select" required>
+              <option value="">— Pilih —</option>
+              <option>Hadir, Insya Allah</option>
+              <option>Berhalangan</option>
+            </select>
+            <div class="invalid-feedback">Pilih salah satu.</div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label class="form-label">Jumlah Tamu</label>
+            <input id="jml" type="number" min="1" value="1" class="form-control" required>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Ucapan &amp; Doa</label>
+          <textarea id="ucap" rows="3" class="form-control" required></textarea>
+          <div class="invalid-feedback">Ucapan wajib diisi.</div>
+        </div>
+        <button class="btn btn-gold w-100">Kirim</button>
+      </form>
+      <div id="daftarUcapan" class="mt-4 text-start">
+        <p id="kosong" class="text-center text-muted">Belum ada ucapan. Jadilah yang pertama!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-6 bg-gold-soft text-center">
+    <div class="container">
+      <p class="small-caps reveal">Tanda Kasih</p>
+      <h2 class="script reveal">Amplop Digital</h2>
+      <p class="mx-auto mb-4 reveal" style="max-width:560px">Kehadiranmu adalah hadiah terindah. Namun jika berkenan
+        memberi tanda kasih, kami sediakan dengan penuh syukur:</p>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-5 reveal">
+          <div class="event-card">
+            <h4>Bank Syariah Indonesia</h4>
+            <p class="fs-5 fw-medium mb-1" id="rek1">7210 8888 99</p>
+            <p>a.n. M. Joko</p>
+            <button class="btn btn-gold btn-sm btn-salin" data-target="rek1">Salin</button>
+          </div>
+        </div>
+        <div class="col-md-5 reveal">
+          <div class="event-card">
+            <h4>Bank Mandiri</h4>
+            <p class="fs-5 fw-medium mb-1" id="rek2">1400 2211 3344</p>
+            <p>a.n. Putri Lestari</p>
+            <button class="btn btn-gold btn-sm btn-salin" data-target="rek2">Salin</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-5">
+    <div class="container">
+      <p class="mx-auto" style="max-width:600px">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+        Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai.</p>
+      <p class="mb-0">Kami yang berbahagia,</p>
+      <h2 class="script display-5 my-2">Joko &amp; Putri</h2>
+      <small>Dibuat dengan ❤ untuk tugas Pemrograman Berbasis Platform</small>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="modalFoto" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0">
+        <div class="modal-body p-0">
+          <div id="fotoBesar" class="gal-big"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="undangan_pernikahan.js"></script>
+</body>
+
+</html>
